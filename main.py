@@ -1,6 +1,6 @@
-"""delegator_c316ca - Concurrent worker pool."""
+"""delegator_193727 - Concurrent worker pool."""
 import threading, queue, time, json
-POOL_NAME = "delegator_c316ca"
+POOL_NAME = "delegator_193727"
 def worker(q: queue.Queue, results: list, lock: threading.Lock):
     while True:
         try:

