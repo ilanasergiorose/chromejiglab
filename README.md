@@ -1,4 +1,4 @@
-# delegator-a24d4f
+# delegator-c316ca
 
 A Python delegator utility.
 
